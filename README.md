@@ -25,14 +25,12 @@ A content-based music recommendation system built on top of your own Spotify lis
 
 ```
 ├── spotify-recommendation-engine.ipynb   # main notebook: data prep, feature engineering, recommendations
-├── spotify/
-│   ├── data.csv                          # base song-level dataset
-│   ├── Folklore.csv
-│   ├── Hindie.csv
-│   ├── Nepali_Gem.csv
-│   ├── Old_Melodies.csv
-│   ├── Samui.csv
-│   └── Southie.csv                       # exported playlists used to test recommendations
+├── data/
+│   ├── data.csv                          # song-level dataset (audio features, playlist tag, popularity, etc.)
+│   ├── data_by_artist.csv                # audio features aggregated by artist
+│   ├── data_by_genres.csv                # audio features aggregated by genre
+│   ├── data_by_year.csv                  # audio features aggregated by year
+│   └── data_w_genres.csv                 # artist-level data with genre lists attached
 ```
 
 ## Setup
